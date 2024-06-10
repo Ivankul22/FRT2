@@ -60,7 +60,7 @@
             const serviceID = 'service_pddc23a'; 
             const templateID = '__ejs-test-mail-service__'; 
 
-            emailjs.sendForm(serviceID, templateID, this)
+            emailjs.sendForm(name , this)
                 .then(() => {
                     alert('Your message has been sent successfully!');
                 }, (err) => {
