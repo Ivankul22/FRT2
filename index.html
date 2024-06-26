@@ -1,23 +1,36 @@
+﻿<
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FRT</title>
+    <title>FRT: The Ultimate WWII Experience</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("YOUR_USER_ID"); // Replace "YOUR_USER_ID" with your actual user ID from EmailJS
+        })();
+    </script>
 </head>
 <body>
     <header>
-        <div class="container">
+        <div class="container header-container">
+            <img src="images/logo.png" alt="FRT Logo" class="logo">
             <h1>FRT</h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="game.html">The Game</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="credits.html">Credits</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
+            <div class="language-switcher">
+                <a href="#" class="lang" data-lang="en">EN</a> | <a href="#" class="lang" data-lang="ua">UA</a>
+            </div>
         </div>
     </header>
 
@@ -25,24 +38,40 @@
         <section class="hero">
             <img src="images/frt-game.jpg" alt="FRT Game Image">
             <div class="hero-text">
-                <h2>Experience the Epic Battles of World War II</h2>
-                <a href="game.html" class="btn">Learn More</a>
+                <h2 data-en="FRT: The Ultimate WWII Experience" data-ua="FRT: Найкращий досвід Другої світової війни">FRT: The Ultimate WWII Experience</h2>
+                <a href="game.html" class="btn" data-en="Learn More" data-ua="Дізнатися більше">Learn More</a>
             </div>
         </section>
 
         <section class="introduction">
             <div class="container">
-                <h3>Welcome to FRT</h3>
-                <p>Dive into the most intense and realistic World War II gaming experience. Relive historical battles, command your troops, and change the course of history.</p>
+                <h3 data-en="Welcome to FRT" data-ua="Ласкаво просимо до FRT">Welcome to FRT</h3>
+                <p data-en="Dive into the most intense and realistic World War II gaming experience. Relive historical battles, command your troops, and change the course of history." data-ua="Пориньте у найінтенсивніший та найреалістичніший ігровий досвід Другої світової війни. Переживайте історичні битви, командуйте своїми військами та змінюйте хід історії.">Dive into the most intense and realistic World War II gaming experience. Relive historical battles, command your troops, and change the course of history.</p>
+            </div>
+        </section>
+
+        <section class="about-me">
+            <div class="container">
+                <h3 data-en="About Me" data-ua="Про мене">About Me</h3>
+                <p data-en="Hi, I'm Ivan, the developer behind FRT. My passion for history and gaming drove me to create a game that immerses players in the strategic and dramatic events of World War II. Thank you for your support!" data-ua="Привіт, я Іван, розробник FRT. Моє захоплення історією та іграми спонукало мене створити гру, яка занурює гравців у стратегічні та драматичні події Другої світової війни. Дякую за вашу підтримку!">Hi, I'm Ivan, the developer behind FRT. My passion for history and gaming drove me to create a game that immerses players in the strategic and dramatic events of World War II. Thank you for your support!</p>
+            </div>
+        </section>
+
+        <section class="credits">
+            <div class="container">
+                <h3 data-en="Credits" data-ua="Подяки">Credits</h3>
+                <p data-en="Special thanks to all the contributors, designers, and testers who helped bring FRT to life." data-ua="Особлива подяка всім учасникам, дизайнерам та тестерам, які допомогли оживити FRT.">Special thanks to all the contributors, designers, and testers who helped bring FRT to life.</p>
             </div>
         </section>
     </main>
 
     <footer>
-        <div class="container">
+        <div class="container footer-container">
             <p>&copy; 2024 FRT. All rights reserved.</p>
+            <a href="#" class="steam-btn" data-en="Connect to Steam" data-ua="Підключитися до Steam">Connect to Steam</a>
         </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>

@@ -9,41 +9,54 @@
 </head>
 <body>
     <header>
-        <div class="container">
+        <div class="container header-container">
+            <img src="images/logo.png" alt="FRT Logo" class="logo">
             <h1>FRT</h1>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="game.html">The Game</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.html" data-en="Home" data-ua="Головна">Home</a></li>
+                    <li><a href="game.html" data-en="The Game" data-ua="Гра">The Game</a></li>
+                    <li><a href="about.html" data-en="About Me" data-ua="Про мене">About Me</a></li>
+                    <li><a href="credits.html" data-en="Credits" data-ua="Подяки">Credits</a></li>
+                    <li><a href="contact.html" data-en="Contact" data-ua="Контакт">Contact</a></li>
                 </ul>
             </nav>
+            <div class="language-switcher">
+                <a href="#" class="lang" data-lang="en">EN</a> | <a href="#" class="lang" data-lang="ua">UA</a>
+            </div>
         </div>
     </header>
 
     <main>
-        <section class="game-description">
+        <section class="game-info">
             <div class="container">
-                <h2>About the Game</h2>
-                <p>The FRT game offers a comprehensive and immersive experience into the world of World War II. Players can choose from a variety of campaigns and missions, each meticulously designed to reflect historical events.</p>
-                <h3>Features</h3>
-                <ul>
-                    <li>Realistic battle scenarios</li>
-                    <li>Multiple campaigns and missions</li>
-                    <li>Command a variety of units</li>
-                    <li>Multiplayer mode</li>
-                    <li>Historical accuracy</li>
-                    <li>Stunning graphics</li>
-                </ul>
+                <h2 data-en="The Game - FRT" data-ua="Гра - FRT">The Game - FRT</h2>
+                <p data-en="FRT is a thrilling World War II strategy game that puts you in command of historical battles. Plan your tactics, lead your troops, and rewrite history!" data-ua="FRT - це захоплююча стратегічна гра про Другу світову війну, яка ставить вас у центр історичних битв. Плануйте тактику, керуйте своїми військами та переписуйте історію!">FRT is a thrilling World War II strategy game that puts you in command of historical battles. Plan your tactics, lead your troops, and rewrite history!</p>
+                <p data-en="Immerse yourself in the detailed scenarios, accurate historical events, and strategic challenges that define FRT." data-ua="Погрузіться в детальні сценарії, точні історичні події та стратегічні виклики, які визначають FRT.">Immerse yourself in the detailed scenarios, accurate historical events, and strategic challenges that define FRT.</p>
+                <a href="#" class="btn" data-en="Play Now" data-ua="Грати зараз">Play Now</a>
+            </div>
+        </section>
+
+        <section class="support-ukraine">
+            <div class="container">
+                <h2 data-en="Support Ukraine" data-ua="Підтримайте Україну">Support Ukraine</h2>
+                <p data-en="Stand with Ukraine in these challenging times. Your support makes a difference." data-ua="Підтримайте Україну у цей важливий час. Ваша підтримка має значення.">Stand with Ukraine in these challenging times. Your support makes a difference.</p>
+                <a href="https://www.redcross.org/donate/cm/redcross-prefund.html" target="_blank" class="btn" data-en="Donate Now" data-ua="Пожертвувати зараз">Donate Now</a>
             </div>
         </section>
     </main>
 
     <footer>
-        <div class="container">
+        <div class="container footer-container">
             <p>&copy; 2024 FRT. All rights reserved.</p>
+            <a href="#" class="steam-btn" data-en="Connect to Steam" data-ua="Підключитися до Steam">Connect to Steam</a>
+            <div class="support-ukraine-footer">
+                <p data-en="Support Ukraine:" data-ua="Підтримайте Україну:"></p>
+                <a href="https://www.redcross.org/donate/cm/redcross-prefund.html" target="_blank" class="btn" data-en="Donate Now" data-ua="Пожертвувати зараз">Donate Now</a>
+            </div>
         </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
